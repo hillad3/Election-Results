@@ -1,0 +1,16 @@
+.header-box {
+  margin-left: 50px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.selector-box {
+  margin-left: 50px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 30rem; 
+  text-align: left;
+}
