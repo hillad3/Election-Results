@@ -14,12 +14,15 @@ df = pd.read_csv(
 
 df_states = df.loc[(df["Candidate"] != "Total") & (df["State"] != "Total")]
 
-DEM_COLOR = "#00AEF3"
-REP_COLOR = "#E9141D"
-OTH_COLOR = "#007D10"
+colors = {
+    "Democrat":"#00AEF3",
+    "Republican":"#E9141D",
+    "Third Party":"#007D10"
+}
 
 app = Dash(__name__, prevent_initial_callbacks=True)
 
+server = app.server
 
 @app.callback(
     Output(component_id="ge_pop_vote_graph", component_property="figure"),
@@ -76,15 +79,26 @@ def update_ge_vote_graph(
             x="Year",
             y="Votes",
             color="Party",
-            color_discrete_sequence=[REP_COLOR, DEM_COLOR, OTH_COLOR],
+            color_discrete_map = colors,
             barnorm=barnorm_setting,
             facet_col="State",
-            facet_col_wrap=facet_wrap_size
+            facet_col_wrap=facet_wrap_size,
+            height=800,
+            hover_data={
+                'Party':False,
+                'State':False,
+                'Year':False,
+                'Votes':':.1f'
+            }
+        )
+        .update_traces(
+            hovertemplate='<b>Votes:</b> %{y:,.1f}'
         )
         .update_layout(
             title=dict(text="US Presidental Election, Popular Vote"),
             title_subtitle=dict(text=subtitle_setting),
             margin=dict(t=100),
+            hovermode='x'
         )
         .update_xaxes(title=dict(font=dict(size=8)))
         .update_yaxes(range=[0, y_range_max])
