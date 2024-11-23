@@ -95,7 +95,7 @@ def update_ge_vote_graph(
             hovertemplate='<b>Votes:</b> %{y:,.1f}'
         )
         .update_layout(
-            title=dict(text="US Presidental Election, Popular Vote"),
+            title=dict(text="US Presidential Election, Popular Vote"),
             title_subtitle=dict(text=subtitle_setting),
             margin=dict(t=100),
             hovermode='x'
@@ -188,8 +188,8 @@ def update_toggle(toggle_vote_clicks):
 app.layout = [
     html.Div(
         [    
-            html.Title("US Presidental Election Results, 2004-2024"),
-            html.H1("Explore US Presidental Election Results, 2004-2024", style={"text-align":"center", "margin-top":"50px"}),
+            html.Title("US Presidential Election Results, 2004-2024"),
+            html.H1("Explore US Presidential Election Results, 2004-2024", style={"text-align":"center", "margin-top":"50px"}),
             html.P(
                 html.Span(
                     [
