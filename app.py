@@ -7,40 +7,97 @@ from dash import Dash, html, dcc, callback, Input, Output
 import dash_daq as daq
 from list_of_states import States
 
-df = pd.read_csv(
+df_original = pd.read_csv(
     "compiled_fed_elections_2004-2024.csv",
     dtype={"State": str, "Year": str, "Candidate": str, "Party": str, "Votes": int},
 )
 
-df_states = df.loc[(df["Candidate"] != "Total") & (df["State"] != "Total")]
+# remove all totals for the states-only df
+df_states = df_original.loc[
+    (df_original["Candidate"] != "Total") & 
+    (df_original["State"] != "Total") & 
+    (df_original["Party"] != "Total")
+]
 
-colors = {
-    "Democrat":"#00AEF3",
-    "Republican":"#E9141D",
-    "Third Party":"#007D10"
-}
+colors = {"Democrat": "#00AEF3", "Republican": "#E9141D", "Third Party": "#007D10"}
 
 app = Dash(__name__, prevent_initial_callbacks=True)
 
 server = app.server
 
+
 @app.callback(
-    Output(component_id="ge_pop_vote_graph", component_property="figure"),
+    Output(component_id="us_vote_graph", component_property="figure"),
     [
-        Input(component_id="facet_wrap_column_selector", component_property="value"),
         Input(component_id="toggle_votes_or_pct", component_property="n_clicks"),
+        Input(component_id="toggle_states_or_all", component_property="n_clicks"),
         Input(component_id="states_selected", component_property="value"),
         Input(component_id="years_selected", component_property="value"),
         Input(component_id="parties_selected", component_property="value"),
+        Input(component_id="facet_wrap_column_selector", component_property="value"),
     ],
 )
-def update_ge_vote_graph(
-    facet_wrap_size, toggle_votes, states_selected, years_selected, parties_selected
+def update_us_vote_graph(
+    toggle_votes,
+    toggle_states,
+    states_selected,
+    years_selected,
+    parties_selected,
+    facet_wrap_size,
 ):
+    updated_df = (df_states.loc[
+        (df_states["State"].isin(states_selected)) & 
+        (df_states["Year"].isin(years_selected)) &
+        (df_states["Party"].isin(parties_selected))
+    ])
 
-    updated_df = df_states.loc[(df_states["State"].isin(states_selected))]
-    updated_df = updated_df.loc[(updated_df["Year"].isin(years_selected))]
-    updated_df = updated_df.loc[(updated_df["Party"].isin(parties_selected))]
+    if toggle_states & 0:
+        updated_df = (
+            updated_df
+            .groupby(by=["Candidate","Party","Year"], as_index=False)
+            .Votes
+            .agg(Votes="sum")
+            .sort_values(by = ["Year","Party"])
+        )
+
+    def get_y_range_max(df, is_total_us):
+        if is_total_us:
+            divisor = 100_000_000
+            try:
+                y_range_max = (
+                    math.ceil(
+                        max(
+                            df
+                            .groupby(by=["Year"])
+                            .Votes
+                            .sum()
+                        )
+                        / divisor
+                    )
+                    * divisor
+                )
+            except ValueError:  # covers when user unselects all states
+                y_range_max = divisor
+        else:
+            divisor = 10_000_000
+            try:
+                y_range_max = (
+                    math.ceil(
+                        max(
+                            df
+                            .groupby(by=[df["State"], df["Year"]])
+                            .Votes
+                            .sum()
+                        )
+                        / divisor
+                    )
+                    * divisor
+                )
+            except ValueError:  # covers when user unselects all states
+                y_range_max = divisor
+
+        return y_range_max
+
 
     if toggle_votes & 1:  # this uses bitwise evaluation
         barnorm_setting = ""
@@ -49,74 +106,130 @@ def update_ge_vote_graph(
 
     if barnorm_setting == "percent":
         y_range_max = 100
-        subtitle_setting = r"% of total votes by Year and State"
+        if toggle_states & 1:
+            subtitle_setting = f"Relative % of votes by Year and State"
+        else:
+            subtitle_setting = f"Relative % of votes by Year"
+
+    else:
+        if toggle_states & 1:
+            y_range_max = get_y_range_max(updated_df, is_total_us=False)
+            subtitle_setting = f"Votes by Year and State"
+        else:
+            y_range_max = get_y_range_max(updated_df, is_total_us=True)
+            subtitle_setting = f"Votes by Year"
+
+    if toggle_states & 1:
+
+        if toggle_votes & 1:
+            make_hovertemplate = "<b>Votes: %{y:,.0f}</b>"
+        else:
+            make_hovertemplate = "<b>Vote Share: %{y:,.1f}%</b>"
+
+        fig = (
+            px.histogram(
+                data_frame=updated_df,
+                x="Year",
+                y="Votes",
+                color="Party",
+                color_discrete_map=colors,
+                barnorm=barnorm_setting,
+                facet_col="State",
+                facet_col_wrap=facet_wrap_size,
+                height=600,
+            )
+            .update_traces(
+                hovertemplate=make_hovertemplate
+            )
+            .update_layout(
+                title=dict(text="US Presidential Election, Popular Vote"),
+                title_subtitle=dict(text=subtitle_setting),
+                margin=dict(t=100),
+                hovermode="x",
+            )
+            .update_xaxes(title=dict(font=dict(size=8)))
+            .update_yaxes(range=[0, y_range_max])
+            .for_each_annotation(
+                lambda x: x.update(
+                    text=x.text.split("=")[-1]
+                )  # removes the "state=" from xaxis title
+            )
+            .for_each_xaxis(
+                lambda x: x.update(
+                    title=["" for i in itertools.repeat("", facet_wrap_size)][0]
+                )
+            )
+            .for_each_yaxis(lambda x: x.update(title=""))
+        )
+
+        return fig
     else:
 
-        try:
-            y_range_max = (
-                math.ceil(
-                    max(
-                        updated_df.loc[
-                            (updated_df["Candidate"] != "Total")
-                            & (updated_df["State"] != "Total"),
-                            "Votes",
-                        ]
-                        .groupby(by=[updated_df["State"], updated_df["Year"]])
-                        .sum()
-                    )
-                    / 10000000
+        if toggle_votes & 1:
+            make_hovertemplate = "<b>Votes: %{y:,.0f}</b>"
+        else:
+            make_hovertemplate = "<b>Vote Share: %{y:,.1f}%</b>"
+
+        fig = (
+            px.histogram(
+                data_frame=updated_df,
+                x="Year",
+                y="Votes",
+                color="Party",
+                color_discrete_map=colors,
+                barnorm=barnorm_setting,
+                height=600,
+            )
+            .update_traces(
+                customdata = np.stack((updated_df['Candidate']), axis=-1),
+                hovertemplate=make_hovertemplate
+            )
+            .update_layout(
+                title=dict(text="US Presidential Election, Popular Vote"),
+                title_subtitle=dict(text=subtitle_setting),
+                margin=dict(t=100),
+                hovermode="x",
+            )
+            .update_xaxes(title=dict(font=dict(size=8)))
+            .update_yaxes(range=[0, y_range_max])
+            .for_each_annotation(
+                lambda x: x.update(
+                    text=x.text.split("=")[-1]
+                )  # removes the "state=" from xaxis title
+            )
+            .for_each_xaxis(
+                lambda x: x.update(
+                    title=["" for i in itertools.repeat("", facet_wrap_size)][0]
                 )
-                * 10000000
             )
-        except ValueError:  # covers when user unselects all states
-            y_range_max = 10000000
+            .for_each_yaxis(lambda x: x.update(title=""))
+        )
 
-        subtitle_setting = "Total votes by Year and State"
+        return fig
 
-    fig = (
-        px.histogram(
-            data_frame=updated_df,
-            x="Year",
-            y="Votes",
-            color="Party",
-            color_discrete_map = colors,
-            barnorm=barnorm_setting,
-            facet_col="State",
-            facet_col_wrap=facet_wrap_size,
-            height=800,
-            hover_data={
-                'Party':False,
-                'State':False,
-                'Year':False,
-                'Votes':':.1f'
-            }
-        )
-        .update_traces(
-            hovertemplate='<b>Votes:</b> %{y:,.1f}'
-        )
-        .update_layout(
-            title=dict(text="US Presidential Election, Popular Vote"),
-            title_subtitle=dict(text=subtitle_setting),
-            margin=dict(t=100),
-            hovermode='x'
-        )
-        .update_xaxes(title=dict(font=dict(size=8)))
-        .update_yaxes(range=[0, y_range_max])
-        .for_each_annotation(
-            lambda x: x.update(
-                text=x.text.split("=")[-1]
-            )  # removes the "state=" from xaxis title
-        )
-        .for_each_xaxis(
-            lambda x: x.update(
-                title=["" for i in itertools.repeat("", facet_wrap_size)][0]
-            )
-        )
-        .for_each_yaxis(lambda x: x.update(title=""))
-    )
 
-    return fig
-
+# updates the toggle votes button with the current state name
+@callback(
+    Output(component_id="toggle_votes_or_pct", component_property="children"),
+    Input(component_id="toggle_votes_or_pct", component_property="n_clicks"),
+)
+def update_toggle(toggle_vote_clicks):
+    if toggle_vote_clicks & 1:
+        return "By Votes"
+    else:
+        return "By Percent"
+    
+# updates the toggle states button with current state name
+@callback(
+    Output(component_id="toggle_states_or_all", component_property="children"),
+    Input(component_id="toggle_states_or_all", component_property="n_clicks"),
+)
+def update_toggle(toggle_states):
+    if toggle_states & 1:
+        return "By States"
+    else:
+        return "By Total US"
+    
 
 # updates the states dropdown with all 50 states except DC
 @callback(
@@ -148,7 +261,11 @@ def remove_all_states(n_clicks):
     prevent_initial_call=True,
 )
 def add_swing_states(n_clicks):
-    return [state for state in States.state_code if state in ["AZ","GA","MI","NC","NV","PA","WI"]]
+    return [
+        state
+        for state in States.state_code
+        if state in ["AZ", "GA", "MI", "NC", "NV", "PA", "WI"]
+    ]
 
 
 # updates the year with all years
@@ -172,55 +289,61 @@ def remove_all_years(n_clicks):
     return []
 
 
-# updates the toggle button with the next toggle name
-@callback(
-    Output(component_id="toggle_votes_or_pct", component_property="children"),
-    Input(component_id="toggle_votes_or_pct", component_property="n_clicks"),
-)
-def update_toggle(toggle_vote_clicks):
-    if toggle_vote_clicks & 1:
-        return "By Votes"
-    else:
-        return "By Percent"
-
-
 # Dash Layout
 app.layout = [
     html.Div(
-        [    
+        [
             html.Title("US Presidential Election Results, 2004-2024"),
-            html.H1("Explore US Presidential Election Results, 2004-2024", style={"text-align":"center", "margin-top":"50px"}),
+            html.H1(
+                "Explore US Presidential Election Results, 2004-2024",
+                style={"text-align": "center", "margin-top": "50px"},
+            ),
             html.P(
                 html.Span(
                     [
                         "The 2024 general election has not been officially reported by all states, so minor vote tally changes are possible. "
                         "2024 tallies are based on ",
-                        html.A("AP News", href="https://apnews.com/projects/election-results-2024/", style={"color":"#2391be"}),
+                        html.A(
+                            "AP News",
+                            href="https://apnews.com/projects/election-results-2024/",
+                            style={"color": "#2391be"},
+                        ),
                         " as of 22-Nov-2024. ",
                         "The remaining vote tallies are based on the ",
-                        html.A("Federal Election Commission reports", href="https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/#election-results", style={"color":"#2391be"}),
-                        "."
-                    ] 
+                        html.A(
+                            "Federal Election Commission reports",
+                            href="https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/#election-results",
+                            style={"color": "#2391be"},
+                        ),
+                        ".",
+                    ]
                 )
-            )
+            ),
         ],
-        className="header-box"
-    ),
-    html.Div(
-        dcc.Graph(figure={}, id="ge_pop_vote_graph"),
+        className="header-box",
     ),
     html.Div(
         [
-            html.H4("Vote Summary"),
+            html.H4("Toggle Options"),
             html.Button(
                 children="Toggle Votes",
                 id="toggle_votes_or_pct",
                 n_clicks=0,
                 className="btn btn-primary",
-                style={"width": "14.5rem"},
+                style={"width": "14.5rem", "margin-right": "0.25rem"},
+            ),
+            html.Button(
+                children="Toggle States",
+                id="toggle_states_or_all",
+                n_clicks=0,
+                className="btn btn-danger",
+                style={"width": "14.5rem", "margin-left": "0.25rem"},
             ),
         ],
         className="selector-box",
+    ),
+    html.Div(
+        dcc.Graph(figure={}, id="us_vote_graph"),
     ),
     html.Div(
         [
@@ -307,11 +430,11 @@ app.layout = [
         [
             html.H4("Parties Selected"),
             dcc.Dropdown(
-                options=["Democrat","Republican","Third Party"],
-                value=["Democrat","Republican","Third Party"],
+                options=["Democrat", "Republican", "Third Party"],
+                value=["Democrat", "Republican", "Third Party"],
                 id="parties_selected",
                 multi=True,
-            )
+            ),
         ],
         className="selector-box",
     ),
