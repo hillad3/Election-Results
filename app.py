@@ -6,7 +6,6 @@ import math
 from dash import Dash, html, dcc, callback, Input, Output
 import dash_daq as daq
 from list_of_states import States
-import time
 
 fig_dummy = px.scatter(
     x = None,
