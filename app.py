@@ -6,6 +6,24 @@ import math
 from dash import Dash, html, dcc, callback, Input, Output
 import dash_daq as daq
 from list_of_states import States
+import time
+
+fig_dummy = px.scatter(
+    x = None,
+    y = None,
+).update_xaxes(
+    visible=False
+).update_yaxes(
+    visible=False
+).add_annotation(
+    dict(
+        font=dict(size=20),
+        x=0,
+        y=0,
+        text="Loading...",
+        showarrow=False
+    )
+)
 
 df_original = pd.read_csv(
     "compiled_fed_elections_2004-2024.csv",
@@ -330,20 +348,20 @@ app.layout = [
                 id="toggle_votes_or_pct",
                 n_clicks=0,
                 className="btn btn-primary",
-                style={"width": "14.5rem", "margin-right": "0.25rem"},
+                style={"width": "40%", "margin-right": "0.25rem"},
             ),
             html.Button(
                 children="Toggle States",
                 id="toggle_states_or_all",
                 n_clicks=0,
                 className="btn btn-danger",
-                style={"width": "14.5rem", "margin-left": "0.25rem"},
+                style={"width": "40%", "margin-left": "0.25rem"},
             ),
         ],
         className="selector-box",
     ),
     html.Div(
-        dcc.Graph(figure={}, id="us_vote_graph"),
+        dcc.Graph(figure=fig_dummy, id="us_vote_graph"),
     ),
     html.Div(
         [
