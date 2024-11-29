@@ -325,7 +325,7 @@ app.layout = [
                             href="https://apnews.com/projects/election-results-2024/",
                             style={"color": "#2391be"},
                         ),
-                        " as of 22-Nov-2024. ",
+                        " as of 28-Nov-2024. ",
                         "The remaining vote tallies are based on the ",
                         html.A(
                             "Federal Election Commission reports",
