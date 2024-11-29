@@ -197,8 +197,8 @@ def update_us_vote_graph(
                 barnorm=barnorm_setting,
                 facet_col="State",
                 facet_col_wrap=facet_wrap_size,
-                height=1200,
-                facet_row_spacing=0.02
+                height=800,
+                facet_row_spacing=0.05
             )
             .update_traces(
                 hovertemplate=make_hovertemplate
@@ -465,7 +465,7 @@ app.layout = [
     html.Div(
         [
             html.H4("Max Columns"),
-            daq.NumericInput(id="facet_wrap_column_selector", value=5, min=1, max=20),
+            daq.NumericInput(id="facet_wrap_column_selector", value=10, min=1, max=20),
         ],
         className="selector-box",
     ),
