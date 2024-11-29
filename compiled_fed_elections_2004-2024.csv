@@ -10,13 +10,13 @@ AL,2008,Republican,Mccain,1266546
 AL,2012,Republican,Romney,1255925
 AL,2016,Republican,Trump,1318255
 AL,2020,Republican,Trump,1441170
-AL,2024,Republican,Trump,1457704
+AL,2024,Republican,Trump,1462616
 AR,2004,Republican,Bush,572898
 AR,2008,Republican,Mccain,638017
 AR,2012,Republican,Romney,647744
 AR,2016,Republican,Trump,684872
 AR,2020,Republican,Trump,760647
-AR,2024,Republican,Trump,758057
+AR,2024,Republican,Trump,759241
 AZ,2004,Republican,Bush,1104294
 AZ,2008,Republican,Mccain,1230111
 AZ,2012,Republican,Romney,1233654
@@ -28,13 +28,13 @@ CA,2008,Republican,Mccain,5011781
 CA,2012,Republican,Romney,4839958
 CA,2016,Republican,Trump,4483814
 CA,2020,Republican,Trump,6006518
-CA,2024,Republican,Trump,5938601
+CA,2024,Republican,Trump,6050902
 CO,2004,Republican,Bush,1101255
 CO,2008,Republican,Mccain,1073629
 CO,2012,Republican,Romney,1185243
 CO,2016,Republican,Trump,1202484
 CO,2020,Republican,Trump,1364607
-CO,2024,Republican,Trump,1377078
+CO,2024,Republican,Trump,1377441
 CT,2004,Republican,Bush,693826
 CT,2008,Republican,Mccain,629428
 CT,2012,Republican,Romney,634892
@@ -46,19 +46,19 @@ DC,2008,Republican,Mccain,17367
 DC,2012,Republican,Romney,21381
 DC,2016,Republican,Trump,12723
 DC,2020,Republican,Trump,18586
-DC,2024,Republican,Trump,20888
+DC,2024,Republican,Trump,21076
 DE,2004,Republican,Bush,171660
 DE,2008,Republican,Mccain,152374
 DE,2012,Republican,Romney,165484
 DE,2016,Republican,Trump,185127
 DE,2020,Republican,Trump,200603
-DE,2024,Republican,Trump,214184
+DE,2024,Republican,Trump,214351
 FL,2004,Republican,Bush,3964522
 FL,2008,Republican,Mccain,4045624
 FL,2012,Republican,Romney,4163447
 FL,2016,Republican,Trump,4617886
 FL,2020,Republican,Trump,5668731
-FL,2024,Republican,Trump,6109549
+FL,2024,Republican,Trump,6110125
 GA,2004,Republican,Bush,1914254
 GA,2008,Republican,Mccain,2048759
 GA,2012,Republican,Romney,2078688
@@ -70,7 +70,7 @@ HI,2008,Republican,Mccain,120566
 HI,2012,Republican,Romney,121015
 HI,2016,Republican,Trump,128847
 HI,2020,Republican,Trump,196864
-HI,2024,Republican,Trump,193169
+HI,2024,Republican,Trump,193661
 IA,2004,Republican,Bush,751957
 IA,2008,Republican,Mccain,682379
 IA,2012,Republican,Romney,730617
@@ -82,13 +82,13 @@ ID,2008,Republican,Mccain,403012
 ID,2012,Republican,Romney,420911
 ID,2016,Republican,Trump,409055
 ID,2020,Republican,Trump,554119
-ID,2024,Republican,Trump,605144
+ID,2024,Republican,Trump,605246
 IL,2004,Republican,Bush,2345946
 IL,2008,Republican,Mccain,2031179
 IL,2012,Republican,Romney,2135216
 IL,2016,Republican,Trump,2146015
 IL,2020,Republican,Trump,2446891
-IL,2024,Republican,Trump,2444517
+IL,2024,Republican,Trump,2444631
 IN,2004,Republican,Bush,1479438
 IN,2008,Republican,Mccain,1345648
 IN,2012,Republican,Romney,1420543
@@ -112,7 +112,7 @@ LA,2008,Republican,Mccain,1148275
 LA,2012,Republican,Romney,1152262
 LA,2016,Republican,Trump,1178638
 LA,2020,Republican,Trump,1255776
-LA,2024,Republican,Trump,1208269
+LA,2024,Republican,Trump,1208505
 MA,2004,Republican,Bush,1071109
 MA,2008,Republican,Mccain,1108854
 MA,2012,Republican,Romney,1188314
@@ -124,31 +124,31 @@ MD,2008,Republican,Mccain,959862
 MD,2012,Republican,Romney,971869
 MD,2016,Republican,Trump,943169
 MD,2020,Republican,Trump,976414
-MD,2024,Republican,Trump,1026135
+MD,2024,Republican,Trump,1033899
 ME,2004,Republican,Bush,330201
 ME,2008,Republican,Mccain,295273
 ME,2012,Republican,Romney,292276
 ME,2016,Republican,Trump,335593
 ME,2020,Republican,Trump,360737
-ME,2024,Republican,Trump,374972
+ME,2024,Republican,Trump,376633
 MI,2004,Republican,Bush,2313746
 MI,2008,Republican,Mccain,2048639
 MI,2012,Republican,Romney,2115256
 MI,2016,Republican,Trump,2279543
 MI,2020,Republican,Trump,2649852
-MI,2024,Republican,Trump,2804647
+MI,2024,Republican,Trump,2816636
 MN,2004,Republican,Bush,1346695
 MN,2008,Republican,Mccain,1275409
 MN,2012,Republican,Romney,1320225
 MN,2016,Republican,Trump,1322951
 MN,2020,Republican,Trump,1484065
-MN,2024,Republican,Trump,1656968
+MN,2024,Republican,Trump,1656979
 MO,2004,Republican,Bush,1455713
 MO,2008,Republican,Mccain,1445814
 MO,2012,Republican,Romney,1482440
 MO,2016,Republican,Trump,1594511
 MO,2020,Republican,Trump,1718736
-MO,2024,Republican,Trump,1750987
+MO,2024,Republican,Trump,1751027
 MS,2004,Republican,Bush,684981
 MS,2008,Republican,Mccain,724597
 MS,2012,Republican,Romney,710746
@@ -166,7 +166,7 @@ NE,2008,Republican,Mccain,452979
 NE,2012,Republican,Romney,475064
 NE,2016,Republican,Trump,495961
 NE,2020,Republican,Trump,556846
-NE,2024,Republican,Trump,564340
+NE,2024,Republican,Trump,564753
 NH,2004,Republican,Bush,331237
 NH,2008,Republican,Mccain,316534
 NH,2012,Republican,Romney,329918
@@ -184,7 +184,7 @@ NM,2008,Republican,Mccain,346832
 NM,2012,Republican,Romney,335788
 NM,2016,Republican,Trump,319667
 NM,2020,Republican,Trump,401894
-NM,2024,Republican,Trump,423327
+NM,2024,Republican,Trump,423391
 NV,2004,Republican,Bush,418690
 NV,2008,Republican,Mccain,412827
 NV,2012,Republican,Romney,463567
@@ -196,7 +196,7 @@ NY,2008,Republican,Mccain,2752771
 NY,2012,Republican,Romney,2490431
 NY,2016,Republican,Trump,2819533
 NY,2020,Republican,Trump,3251997
-NY,2024,Republican,Trump,3484068
+NY,2024,Republican,Trump,3484124
 NC,2004,Republican,Bush,1961166
 NC,2008,Republican,Mccain,2128474
 NC,2012,Republican,Romney,2270395
@@ -226,7 +226,7 @@ OR,2008,Republican,Mccain,738475
 OR,2012,Republican,Romney,754175
 OR,2016,Republican,Trump,782403
 OR,2020,Republican,Trump,958448
-OR,2024,Republican,Trump,909706
+OR,2024,Republican,Trump,910702
 PA,2004,Republican,Bush,2793847
 PA,2008,Republican,Mccain,2655885
 PA,2012,Republican,Romney,2680434
@@ -238,7 +238,7 @@ RI,2008,Republican,Mccain,165391
 RI,2012,Republican,Romney,157204
 RI,2016,Republican,Trump,180543
 RI,2020,Republican,Trump,199922
-RI,2024,Republican,Trump,213021
+RI,2024,Republican,Trump,214406
 SC,2004,Republican,Bush,937974
 SC,2008,Republican,Mccain,1034896
 SC,2012,Republican,Romney,1071645
@@ -256,19 +256,19 @@ TN,2008,Republican,Mccain,1479178
 TN,2012,Republican,Romney,1462330
 TN,2016,Republican,Trump,1522925
 TN,2020,Republican,Trump,1852475
-TN,2024,Republican,Trump,1964593
+TN,2024,Republican,Trump,1965848
 TX,2004,Republican,Bush,4526917
 TX,2008,Republican,Mccain,4479328
 TX,2012,Republican,Romney,4569843
 TX,2016,Republican,Trump,4685047
 TX,2020,Republican,Trump,5890347
-TX,2024,Republican,Trump,6375376
+TX,2024,Republican,Trump,6393597
 UT,2004,Republican,Bush,663742
 UT,2008,Republican,Mccain,596030
 UT,2012,Republican,Romney,740600
 UT,2016,Republican,Trump,515231
 UT,2020,Republican,Trump,865140
-UT,2024,Republican,Trump,883799
+UT,2024,Republican,Trump,883818
 VA,2004,Republican,Bush,1716959
 VA,2008,Republican,Mccain,1725005
 VA,2012,Republican,Romney,1822522
@@ -286,7 +286,7 @@ WA,2008,Republican,Mccain,1229216
 WA,2012,Republican,Romney,1290670
 WA,2016,Republican,Trump,1221747
 WA,2020,Republican,Trump,1584651
-WA,2024,Republican,Trump,1522988
+WA,2024,Republican,Trump,1530923
 WI,2004,Republican,Bush,1478120
 WI,2008,Republican,Mccain,1262393
 WI,2012,Republican,Romney,1407966
@@ -310,7 +310,7 @@ Total,2008,Republican,Mccain,59948323
 Total,2012,Republican,Romney,60933504
 Total,2016,Republican,Trump,62984828
 Total,2020,Republican,Trump,74223975
-Total,2024,Republican,Trump,76923568
+Total,2024,Republican,Trump,77096012
 AK,2004,Democrat,Kerry,111025
 AK,2008,Democrat,Obama,123594
 AK,2012,Democrat,Obama,122640
@@ -322,13 +322,13 @@ AL,2008,Democrat,Obama,813479
 AL,2012,Democrat,Obama,795696
 AL,2016,Democrat,Clinton,729547
 AL,2020,Democrat,Biden,849624
-AL,2024,Democrat,Harris,769391
+AL,2024,Democrat,Harris,772412
 AR,2004,Democrat,Kerry,469953
 AR,2008,Democrat,Obama,422310
 AR,2012,Democrat,Obama,394409
 AR,2016,Democrat,Clinton,380494
 AR,2020,Democrat,Biden,423932
-AR,2024,Democrat,Harris,395855
+AR,2024,Democrat,Harris,396905
 AZ,2004,Democrat,Kerry,893524
 AZ,2008,Democrat,Obama,1034707
 AZ,2012,Democrat,Obama,1025232
@@ -340,13 +340,13 @@ CA,2008,Democrat,Obama,8274473
 CA,2012,Democrat,Obama,7854285
 CA,2016,Democrat,Clinton,8753792
 CA,2020,Democrat,Biden,11110639
-CA,2024,Democrat,Harris,9123913
+CA,2024,Democrat,Harris,9249261
 CO,2004,Democrat,Kerry,1001732
 CO,2008,Democrat,Obama,1288633
 CO,2012,Democrat,Obama,1323102
 CO,2016,Democrat,Clinton,1338870
 CO,2020,Democrat,Biden,1804352
-CO,2024,Democrat,Harris,1727603
+CO,2024,Democrat,Harris,1728159
 CT,2004,Democrat,Kerry,857488
 CT,2008,Democrat,Obama,997772
 CT,2012,Democrat,Obama,905083
@@ -358,19 +358,19 @@ DC,2008,Democrat,Obama,245800
 DC,2012,Democrat,Obama,267070
 DC,2016,Democrat,Clinton,282830
 DC,2020,Democrat,Biden,317323
-DC,2024,Democrat,Harris,289453
+DC,2024,Democrat,Harris,294185
 DE,2004,Democrat,Kerry,200152
 DE,2008,Democrat,Obama,255459
 DE,2012,Democrat,Obama,242584
 DE,2016,Democrat,Clinton,235603
 DE,2020,Democrat,Biden,296268
-DE,2024,Democrat,Harris,289585
+DE,2024,Democrat,Harris,289758
 FL,2004,Democrat,Kerry,3583544
 FL,2008,Democrat,Obama,4282074
 FL,2012,Democrat,Obama,4237756
 FL,2016,Democrat,Clinton,4504975
 FL,2020,Democrat,Biden,5297045
-FL,2024,Democrat,Harris,4680890
+FL,2024,Democrat,Harris,4683038
 GA,2004,Democrat,Kerry,1366149
 GA,2008,Democrat,Obama,1844123
 GA,2012,Democrat,Obama,1773827
@@ -382,7 +382,7 @@ HI,2008,Democrat,Obama,325871
 HI,2012,Democrat,Obama,306658
 HI,2016,Democrat,Clinton,266891
 HI,2020,Democrat,Biden,366130
-HI,2024,Democrat,Harris,312384
+HI,2024,Democrat,Harris,313044
 IA,2004,Democrat,Kerry,741898
 IA,2008,Democrat,Obama,828940
 IA,2012,Democrat,Obama,822544
@@ -394,13 +394,13 @@ ID,2008,Democrat,Obama,236440
 ID,2012,Democrat,Obama,212787
 ID,2016,Democrat,Clinton,189765
 ID,2020,Democrat,Biden,287021
-ID,2024,Democrat,Harris,274973
+ID,2024,Democrat,Harris,274972
 IL,2004,Democrat,Kerry,2891550
 IL,2008,Democrat,Obama,3419348
 IL,2012,Democrat,Obama,3019512
 IL,2016,Democrat,Clinton,3090729
 IL,2020,Democrat,Biden,3471915
-IL,2024,Democrat,Harris,3056201
+IL,2024,Democrat,Harris,3056367
 IN,2004,Democrat,Kerry,969011
 IN,2008,Democrat,Obama,1374039
 IN,2012,Democrat,Obama,1152887
@@ -424,7 +424,7 @@ LA,2008,Democrat,Obama,782989
 LA,2012,Democrat,Obama,809141
 LA,2016,Democrat,Clinton,780154
 LA,2020,Democrat,Biden,856034
-LA,2024,Democrat,Harris,766424
+LA,2024,Democrat,Harris,766870
 MA,2004,Democrat,Kerry,1803800
 MA,2008,Democrat,Obama,1904097
 MA,2012,Democrat,Obama,1921290
@@ -436,31 +436,31 @@ MD,2008,Democrat,Obama,1629467
 MD,2012,Democrat,Obama,1677844
 MD,2016,Democrat,Clinton,1677928
 MD,2020,Democrat,Biden,1985023
-MD,2024,Democrat,Harris,1857794
+MD,2024,Democrat,Harris,1894275
 ME,2004,Democrat,Kerry,396842
 ME,2008,Democrat,Obama,421923
 ME,2012,Democrat,Obama,401306
 ME,2016,Democrat,Clinton,357735
 ME,2020,Democrat,Biden,435072
-ME,2024,Democrat,Harris,430795
+ME,2024,Democrat,Harris,436512
 MI,2004,Democrat,Kerry,2479183
 MI,2008,Democrat,Obama,2872579
 MI,2012,Democrat,Obama,2564569
 MI,2016,Democrat,Clinton,2268839
 MI,2020,Democrat,Biden,2804040
-MI,2024,Democrat,Harris,2724029
+MI,2024,Democrat,Harris,2736533
 MN,2004,Democrat,Kerry,1445014
 MN,2008,Democrat,Obama,1573354
 MN,2012,Democrat,Obama,1546167
 MN,2016,Democrat,Clinton,1367716
 MN,2020,Democrat,Biden,1717077
-MN,2024,Democrat,Harris,1519017
+MN,2024,Democrat,Harris,1519032
 MO,2004,Democrat,Kerry,1259171
 MO,2008,Democrat,Obama,1441911
 MO,2012,Democrat,Obama,1223796
 MO,2016,Democrat,Clinton,1071068
 MO,2020,Democrat,Biden,1253014
-MO,2024,Democrat,Harris,1199856
+MO,2024,Democrat,Harris,1199861
 MS,2004,Democrat,Kerry,458094
 MS,2008,Democrat,Obama,554662
 MS,2012,Democrat,Obama,562949
@@ -478,7 +478,7 @@ NE,2008,Democrat,Obama,333319
 NE,2012,Democrat,Obama,302081
 NE,2016,Democrat,Clinton,284494
 NE,2020,Democrat,Biden,374583
-NE,2024,Democrat,Harris,369687
+NE,2024,Democrat,Harris,369966
 NH,2004,Democrat,Kerry,340511
 NH,2008,Democrat,Obama,384826
 NH,2012,Democrat,Obama,369561
@@ -496,7 +496,7 @@ NM,2008,Democrat,Obama,472422
 NM,2012,Democrat,Obama,415335
 NM,2016,Democrat,Clinton,385234
 NM,2020,Democrat,Biden,501614
-NM,2024,Democrat,Harris,478727
+NM,2024,Democrat,Harris,478802
 NV,2004,Democrat,Kerry,397190
 NV,2008,Democrat,Obama,533736
 NV,2012,Democrat,Obama,531373
@@ -508,7 +508,7 @@ NY,2008,Democrat,Obama,4804945
 NY,2012,Democrat,Obama,4485741
 NY,2016,Democrat,Clinton,4556118
 NY,2020,Democrat,Biden,5244886
-NY,2024,Democrat,Harris,4413528
+NY,2024,Democrat,Harris,4413634
 NC,2004,Democrat,Kerry,1525849
 NC,2008,Democrat,Obama,2142651
 NC,2012,Democrat,Obama,2178391
@@ -538,7 +538,7 @@ OR,2008,Democrat,Obama,1037291
 OR,2012,Democrat,Obama,970488
 OR,2016,Democrat,Clinton,1002106
 OR,2020,Democrat,Biden,1340383
-OR,2024,Democrat,Harris,1227168
+OR,2024,Democrat,Harris,1228410
 PA,2004,Democrat,Kerry,2938095
 PA,2008,Democrat,Obama,3276363
 PA,2012,Democrat,Obama,2990274
@@ -550,7 +550,7 @@ RI,2008,Democrat,Obama,296571
 RI,2012,Democrat,Obama,279677
 RI,2016,Democrat,Clinton,252525
 RI,2020,Democrat,Biden,307486
-RI,2024,Democrat,Harris,282110
+RI,2024,Democrat,Harris,285156
 SC,2004,Democrat,Kerry,661699
 SC,2008,Democrat,Obama,862449
 SC,2012,Democrat,Obama,865941
@@ -568,19 +568,19 @@ TN,2008,Democrat,Obama,1087437
 TN,2012,Democrat,Obama,960709
 TN,2016,Democrat,Clinton,870695
 TN,2020,Democrat,Biden,1143711
-TN,2024,Democrat,Harris,1055170
+TN,2024,Democrat,Harris,1056010
 TX,2004,Democrat,Kerry,2832704
 TX,2008,Democrat,Obama,3528633
 TX,2012,Democrat,Obama,3308124
 TX,2016,Democrat,Clinton,3877868
 TX,2020,Democrat,Biden,5259126
-TX,2024,Democrat,Harris,4806474
+TX,2024,Democrat,Harris,4835250
 UT,2004,Democrat,Kerry,241199
 UT,2008,Democrat,Obama,327670
 UT,2012,Democrat,Obama,251813
 UT,2016,Democrat,Clinton,310676
 UT,2020,Democrat,Biden,560282
-UT,2024,Democrat,Harris,562560
+UT,2024,Democrat,Harris,562566
 VA,2004,Democrat,Kerry,1454742
 VA,2008,Democrat,Obama,1959532
 VA,2012,Democrat,Obama,1971820
@@ -598,7 +598,7 @@ WA,2008,Democrat,Obama,1750848
 WA,2012,Democrat,Obama,1755396
 WA,2016,Democrat,Clinton,1742718
 WA,2020,Democrat,Biden,2369612
-WA,2024,Democrat,Harris,2238564
+WA,2024,Democrat,Harris,2245849
 WI,2004,Democrat,Kerry,1489504
 WI,2008,Democrat,Obama,1677211
 WI,2012,Democrat,Obama,1620985
@@ -622,7 +622,7 @@ Total,2008,Democrat,Obama,69498516
 Total,2012,Democrat,Obama,65915795
 Total,2016,Democrat,Clinton,65853514
 Total,2020,Democrat,Biden,81283501
-Total,2024,Democrat,Harris,74121890
+Total,2024,Democrat,Harris,74356566
 AK,2004,Third Party,All Others,10684
 AK,2008,Third Party,All Others,8762
 AK,2012,Third Party,All Others,13179
@@ -634,13 +634,13 @@ AL,2008,Third Party,All Others,19794
 AL,2012,Third Party,All Others,22717
 AL,2016,Third Party,All Others,75570
 AL,2020,Third Party,All Others,32488
-AL,2024,Third Party,All Others,21242
+AL,2024,Third Party,All Others,21324
 AR,2004,Third Party,All Others,12094
 AR,2008,Third Party,All Others,26290
 AR,2012,Third Party,All Others,27315
 AR,2016,Third Party,All Others,65310
 AR,2020,Third Party,All Others,34490
-AR,2024,Third Party,All Others,26467
+AR,2024,Third Party,All Others,26530
 AZ,2004,Third Party,All Others,14767
 AZ,2008,Third Party,All Others,28657
 AZ,2012,Third Party,All Others,40368
@@ -652,13 +652,13 @@ CA,2008,Third Party,All Others,275646
 CA,2012,Third Party,All Others,344304
 CA,2016,Third Party,All Others,943998
 CA,2020,Third Party,All Others,384223
-CA,2024,Third Party,All Others,494205
+CA,2024,Third Party,All Others,502753
 CO,2004,Third Party,All Others,27343
 CO,2008,Third Party,All Others,39200
 CO,2012,Third Party,All Others,61177
 CO,2016,Third Party,All Others,238893
 CO,2020,Third Party,All Others,88021
-CO,2024,Third Party,All Others,85242
+CO,2024,Third Party,All Others,85243
 CT,2004,Third Party,All Others,27455
 CT,2008,Third Party,All Others,19597
 CT,2012,Third Party,All Others,18985
@@ -670,19 +670,19 @@ DC,2008,Third Party,All Others,2686
 DC,2012,Third Party,All Others,5313
 DC,2016,Third Party,All Others,15715
 DC,2020,Third Party,All Others,8447
-DC,2024,Third Party,All Others,2755
+DC,2024,Third Party,All Others,2778
 DE,2004,Third Party,All Others,3378
 DE,2008,Third Party,All Others,4579
 DE,2012,Third Party,All Others,5853
 DE,2016,Third Party,All Others,23084
 DE,2020,Third Party,All Others,7475
-DE,2024,Third Party,All Others,7584
+DE,2024,Third Party,All Others,7588
 FL,2004,Third Party,All Others,61744
 FL,2008,Third Party,All Others,63046
 FL,2012,Third Party,All Others,72976
 FL,2016,Third Party,All Others,297178
 FL,2020,Third Party,All Others,101680
-FL,2024,Third Party,All Others,100305
+FL,2024,Third Party,All Others,100384
 GA,2004,Third Party,All Others,21472
 GA,2008,Third Party,All Others,31604
 GA,2012,Third Party,All Others,47535
@@ -694,7 +694,7 @@ HI,2008,Third Party,All Others,7131
 HI,2012,Third Party,All Others,7024
 HI,2016,Third Party,All Others,33199
 HI,2020,Third Party,All Others,11475
-HI,2024,Third Party,All Others,9955
+HI,2024,Third Party,All Others,9996
 IA,2004,Third Party,All Others,13053
 IA,2008,Third Party,All Others,25804
 IA,2012,Third Party,All Others,29019
@@ -706,13 +706,13 @@ ID,2008,Third Party,All Others,15670
 ID,2012,Third Party,All Others,18576
 ID,2016,Third Party,All Others,91435
 ID,2020,Third Party,All Others,26794
-ID,2024,Third Party,All Others,24593
+ID,2024,Third Party,All Others,24594
 IL,2004,Third Party,All Others,36826
 IL,2008,Third Party,All Others,71844
 IL,2012,Third Party,All Others,87286
 IL,2016,Third Party,All Others,299680
 IL,2020,Third Party,All Others,114938
-IL,2024,Third Party,All Others,80143
+IL,2024,Third Party,All Others,80152
 IN,2004,Third Party,All Others,19553
 IN,2008,Third Party,All Others,31367
 IN,2012,Third Party,All Others,51104
@@ -736,7 +736,7 @@ LA,2008,Third Party,All Others,29497
 LA,2012,Third Party,All Others,32662
 LA,2016,Third Party,All Others,70240
 LA,2020,Third Party,All Others,36252
-LA,2024,Third Party,All Others,31588
+LA,2024,Third Party,All Others,31600
 MA,2004,Third Party,All Others,37479
 MA,2008,Third Party,All Others,68034
 MA,2012,Third Party,All Others,58163
@@ -748,31 +748,31 @@ MD,2008,Third Party,All Others,42267
 MD,2012,Third Party,All Others,57614
 MD,2016,Third Party,All Others,160349
 MD,2020,Third Party,All Others,75593
-MD,2024,Third Party,All Others,75637
+MD,2024,Third Party,All Others,77191
 ME,2004,Third Party,All Others,13709
 ME,2008,Third Party,All Others,13967
 ME,2012,Third Party,All Others,19598
 ME,2016,Third Party,All Others,54599
 ME,2020,Third Party,All Others,23652
-ME,2024,Third Party,All Others,20890
+ME,2024,Third Party,All Others,20956
 MI,2004,Third Party,All Others,46323
 MI,2008,Third Party,All Others,80548
 MI,2012,Third Party,All Others,51136
 MI,2016,Third Party,All Others,250902
 MI,2020,Third Party,All Others,85410
-MI,2024,Third Party,All Others,110025
+MI,2024,Third Party,All Others,109335
 MN,2004,Third Party,All Others,36678
 MN,2008,Third Party,All Others,61606
 MN,2012,Third Party,All Others,70169
 MN,2016,Third Party,All Others,254146
 MN,2020,Third Party,All Others,76029
-MN,2024,Third Party,All Others,64902
+MN,2024,Third Party,All Others,64905
 MO,2004,Third Party,All Others,16480
 MO,2008,Third Party,All Others,37480
 MO,2012,Third Party,All Others,51087
 MO,2016,Third Party,All Others,143026
 MO,2020,Third Party,All Others,54212
-MO,2024,Third Party,All Others,40999
+MO,2024,Third Party,All Others,41000
 MS,2004,Third Party,All Others,9070
 MS,2008,Third Party,All Others,10606
 MS,2012,Third Party,All Others,11889
@@ -790,7 +790,7 @@ NE,2008,Third Party,All Others,14983
 NE,2012,Third Party,All Others,17234
 NE,2016,Third Party,All Others,63772
 NE,2020,Third Party,All Others,24954
-NE,2024,Third Party,All Others,12334
+NE,2024,Third Party,All Others,12344
 NH,2004,Third Party,All Others,5990
 NH,2008,Third Party,All Others,9610
 NH,2012,Third Party,All Others,11493
@@ -808,7 +808,7 @@ NM,2008,Third Party,All Others,10904
 NM,2012,Third Party,All Others,32635
 NM,2016,Third Party,All Others,93418
 NM,2020,Third Party,All Others,20457
-NM,2024,Third Party,All Others,21234
+NM,2024,Third Party,All Others,21210
 NV,2004,Third Party,All Others,13707
 NV,2008,Third Party,All Others,21285
 NV,2012,Third Party,All Others,19978
@@ -838,7 +838,7 @@ OH,2008,Third Party,All Others,90486
 OH,2012,Third Party,All Others,91701
 OH,2016,Third Party,All Others,261318
 OH,2020,Third Party,All Others,88203
-OH,2024,Third Party,All Others,40127
+OH,2024,Third Party,All Others,50118
 OK,2004,Third Party,All Others,0
 OK,2008,Third Party,All Others,0
 OK,2012,Third Party,All Others,0
@@ -850,7 +850,7 @@ OR,2008,Third Party,All Others,52098
 OR,2012,Third Party,All Others,64607
 OR,2016,Third Party,All Others,216827
 OR,2020,Third Party,All Others,75490
-OR,2024,Third Party,All Others,52096
+OR,2024,Third Party,All Others,68480
 PA,2004,Third Party,All Others,37648
 PA,2008,Third Party,All Others,81024
 PA,2012,Third Party,All Others,82962
@@ -862,13 +862,13 @@ RI,2008,Third Party,All Others,9804
 RI,2012,Third Party,All Others,9168
 RI,2016,Third Party,All Others,31076
 RI,2020,Third Party,All Others,10349
-RI,2024,Third Party,All Others,7850
+RI,2024,Third Party,All Others,11097
 SC,2004,Third Party,All Others,18057
 SC,2008,Third Party,All Others,23624
 SC,2012,Third Party,All Others,26532
 SC,2016,Third Party,All Others,92265
 SC,2020,Third Party,All Others,36685
-SC,2024,Third Party,All Others,20786
+SC,2024,Third Party,All Others,35941
 SD,2004,Third Party,All Others,6387
 SD,2008,Third Party,All Others,7997
 SD,2012,Third Party,All Others,8166
@@ -880,19 +880,19 @@ TN,2008,Third Party,All Others,33134
 TN,2012,Third Party,All Others,35538
 TN,2016,Third Party,All Others,114407
 TN,2020,Third Party,All Others,57665
-TN,2024,Third Party,All Others,30465
+TN,2024,Third Party,All Others,40802
 TX,2004,Third Party,All Others,51144
 TX,2008,Third Party,All Others,69834
 TX,2012,Third Party,All Others,115884
 TX,2016,Third Party,All Others,406311
 TX,2020,Third Party,All Others,165583
-TX,2024,Third Party,All Others,150564
+TX,2024,Third Party,All Others,151258
 UT,2004,Third Party,All Others,22903
 UT,2008,Third Party,All Others,28670
 UT,2012,Third Party,All Others,25027
 UT,2016,Third Party,All Others,305523
 UT,2020,Third Party,All Others,62867
-UT,2024,Third Party,All Others,25304
+UT,2024,Third Party,All Others,41567
 VA,2004,Third Party,All Others,26666
 VA,2008,Third Party,All Others,38723
 VA,2012,Third Party,All Others,60147
@@ -904,13 +904,13 @@ VT,2008,Third Party,All Others,6810
 VT,2012,Third Party,All Others,7353
 VT,2016,Third Party,All Others,41125
 VT,2020,Third Party,All Others,11904
-VT,2024,Third Party,All Others,7733
+VT,2024,Third Party,All Others,11203
 WA,2004,Third Party,All Others,43989
 WA,2008,Third Party,All Others,56814
 WA,2012,Third Party,All Others,79450
 WA,2016,Third Party,All Others,352554
 WA,2020,Third Party,All Others,133368
-WA,2024,Third Party,All Others,84138
+WA,2024,Third Party,All Others,122063
 WI,2004,Third Party,All Others,29383
 WI,2008,Third Party,All Others,43813
 WI,2012,Third Party,All Others,39483
@@ -934,7 +934,7 @@ Total,2008,Third Party,All Others,1866981
 Total,2012,Third Party,All Others,2236111
 Total,2016,Third Party,All Others,7830934
 Total,2020,Third Party,All Others,2922155
-Total,2024,Third Party,All Others,2436886
+Total,2024,Third Party,All Others,2560135
 AK,2004,Total,Total,312598
 AK,2008,Total,Total,326197
 AK,2012,Total,Total,300495
@@ -946,13 +946,13 @@ AL,2008,Total,Total,2099819
 AL,2012,Total,Total,2074338
 AL,2016,Total,Total,2123372
 AL,2020,Total,Total,2323282
-AL,2024,Total,Total,2248337
+AL,2024,Total,Total,2256352
 AR,2004,Total,Total,1054945
 AR,2008,Total,Total,1086617
 AR,2012,Total,Total,1069468
 AR,2016,Total,Total,1130676
 AR,2020,Total,Total,1219069
-AR,2024,Total,Total,1180379
+AR,2024,Total,Total,1182676
 AZ,2004,Total,Total,2012585
 AZ,2008,Total,Total,2293475
 AZ,2012,Total,Total,2299254
@@ -964,13 +964,13 @@ CA,2008,Total,Total,13561900
 CA,2012,Total,Total,13038547
 CA,2016,Total,Total,14181604
 CA,2020,Total,Total,17501380
-CA,2024,Total,Total,15556719
+CA,2024,Total,Total,15802916
 CO,2004,Total,Total,2130330
 CO,2008,Total,Total,2401462
 CO,2012,Total,Total,2569522
 CO,2016,Total,Total,2780247
 CO,2020,Total,Total,3256980
-CO,2024,Total,Total,3189923
+CO,2024,Total,Total,3190843
 CT,2004,Total,Total,1578769
 CT,2008,Total,Total,1646797
 CT,2012,Total,Total,1558960
@@ -982,19 +982,19 @@ DC,2008,Total,Total,265853
 DC,2012,Total,Total,293764
 DC,2016,Total,Total,311268
 DC,2020,Total,Total,344356
-DC,2024,Total,Total,313096
+DC,2024,Total,Total,318039
 DE,2004,Total,Total,375190
 DE,2008,Total,Total,412412
 DE,2012,Total,Total,413921
 DE,2016,Total,Total,443814
 DE,2020,Total,Total,504346
-DE,2024,Total,Total,511353
+DE,2024,Total,Total,511697
 FL,2004,Total,Total,7609810
 FL,2008,Total,Total,8390744
 FL,2012,Total,Total,8474179
 FL,2016,Total,Total,9420039
 FL,2020,Total,Total,11067456
-FL,2024,Total,Total,10890744
+FL,2024,Total,Total,10893547
 GA,2004,Total,Total,3301875
 GA,2008,Total,Total,3924486
 GA,2012,Total,Total,3900050
@@ -1006,7 +1006,7 @@ HI,2008,Total,Total,453568
 HI,2012,Total,Total,434697
 HI,2016,Total,Total,428937
 HI,2020,Total,Total,574469
-HI,2024,Total,Total,515508
+HI,2024,Total,Total,516701
 IA,2004,Total,Total,1506908
 IA,2008,Total,Total,1537123
 IA,2012,Total,Total,1582180
@@ -1018,13 +1018,13 @@ ID,2008,Total,Total,655122
 ID,2012,Total,Total,652274
 ID,2016,Total,Total,690255
 ID,2020,Total,Total,867934
-ID,2024,Total,Total,904710
+ID,2024,Total,Total,904812
 IL,2004,Total,Total,5274322
 IL,2008,Total,Total,5522371
 IL,2012,Total,Total,5242014
 IL,2016,Total,Total,5536424
 IL,2020,Total,Total,6033744
-IL,2024,Total,Total,5580861
+IL,2024,Total,Total,5581150
 IN,2004,Total,Total,2468002
 IN,2008,Total,Total,2751054
 IN,2012,Total,Total,2624534
@@ -1048,7 +1048,7 @@ LA,2008,Total,Total,1960761
 LA,2012,Total,Total,1994065
 LA,2016,Total,Total,2029032
 LA,2020,Total,Total,2148062
-LA,2024,Total,Total,2006281
+LA,2024,Total,Total,2006975
 MA,2004,Total,Total,2912388
 MA,2008,Total,Total,3080985
 MA,2012,Total,Total,3167767
@@ -1060,31 +1060,31 @@ MD,2008,Total,Total,2631596
 MD,2012,Total,Total,2707327
 MD,2016,Total,Total,2781446
 MD,2020,Total,Total,3037030
-MD,2024,Total,Total,2959566
+MD,2024,Total,Total,3005365
 ME,2004,Total,Total,740752
 ME,2008,Total,Total,731163
 ME,2012,Total,Total,713180
 ME,2016,Total,Total,747927
 ME,2020,Total,Total,819461
-ME,2024,Total,Total,826657
+ME,2024,Total,Total,834101
 MI,2004,Total,Total,4839252
 MI,2008,Total,Total,5001766
 MI,2012,Total,Total,4730961
 MI,2016,Total,Total,4799284
 MI,2020,Total,Total,5539302
-MI,2024,Total,Total,5638701
+MI,2024,Total,Total,5662504
 MN,2004,Total,Total,2828387
 MN,2008,Total,Total,2910369
 MN,2012,Total,Total,2936561
 MN,2016,Total,Total,2944813
 MN,2020,Total,Total,3277171
-MN,2024,Total,Total,3240887
+MN,2024,Total,Total,3240916
 MO,2004,Total,Total,2731364
 MO,2008,Total,Total,2925205
 MO,2012,Total,Total,2757323
 MO,2016,Total,Total,2808605
 MO,2020,Total,Total,3025962
-MO,2024,Total,Total,2991842
+MO,2024,Total,Total,2991888
 MS,2004,Total,Total,1152145
 MS,2008,Total,Total,1289865
 MS,2012,Total,Total,1285584
@@ -1102,7 +1102,7 @@ NE,2008,Total,Total,801281
 NE,2012,Total,Total,794379
 NE,2016,Total,Total,844227
 NE,2020,Total,Total,956383
-NE,2024,Total,Total,946361
+NE,2024,Total,Total,947063
 NH,2004,Total,Total,677738
 NH,2008,Total,Total,710970
 NH,2012,Total,Total,710972
@@ -1120,7 +1120,7 @@ NM,2008,Total,Total,830158
 NM,2012,Total,Total,783758
 NM,2016,Total,Total,798319
 NM,2020,Total,Total,923965
-NM,2024,Total,Total,923288
+NM,2024,Total,Total,923403
 NV,2004,Total,Total,829587
 NV,2008,Total,Total,967848
 NV,2012,Total,Total,1014918
@@ -1132,7 +1132,7 @@ NY,2008,Total,Total,7640931
 NY,2012,Total,Total,7081159
 NY,2016,Total,Total,7721442
 NY,2020,Total,Total,8616861
-NY,2024,Total,Total,7897596
+NY,2024,Total,Total,7897758
 NC,2004,Total,Total,3501007
 NC,2008,Total,Total,4310789
 NC,2012,Total,Total,4505372
@@ -1150,7 +1150,7 @@ OH,2008,Total,Total,5708350
 OH,2012,Total,Total,5580847
 OH,2016,Total,Total,5496487
 OH,2020,Total,Total,5922202
-OH,2024,Total,Total,5642473
+OH,2024,Total,Total,5652464
 OK,2004,Total,Total,1463758
 OK,2008,Total,Total,1462661
 OK,2012,Total,Total,1334872
@@ -1162,7 +1162,7 @@ OR,2008,Total,Total,1827864
 OR,2012,Total,Total,1789270
 OR,2016,Total,Total,2001336
 OR,2020,Total,Total,2374321
-OR,2024,Total,Total,2188970
+OR,2024,Total,Total,2207592
 PA,2004,Total,Total,5769590
 PA,2008,Total,Total,6013272
 PA,2012,Total,Total,5753670
@@ -1174,13 +1174,13 @@ RI,2008,Total,Total,471766
 RI,2012,Total,Total,446049
 RI,2016,Total,Total,464144
 RI,2020,Total,Total,517757
-RI,2024,Total,Total,502981
+RI,2024,Total,Total,510659
 SC,2004,Total,Total,1617730
 SC,2008,Total,Total,1920969
 SC,2012,Total,Total,1964118
 SC,2016,Total,Total,2103027
 SC,2020,Total,Total,2513329
-SC,2024,Total,Total,2532985
+SC,2024,Total,Total,2548140
 SD,2004,Total,Total,388215
 SD,2008,Total,Total,381975
 SD,2012,Total,Total,363815
@@ -1192,19 +1192,19 @@ TN,2008,Total,Total,2599749
 TN,2012,Total,Total,2458577
 TN,2016,Total,Total,2508027
 TN,2020,Total,Total,3053851
-TN,2024,Total,Total,3050228
+TN,2024,Total,Total,3062660
 TX,2004,Total,Total,7410765
 TX,2008,Total,Total,8077795
 TX,2012,Total,Total,7993851
 TX,2016,Total,Total,8969226
 TX,2020,Total,Total,11315056
-TX,2024,Total,Total,11332414
+TX,2024,Total,Total,11380105
 UT,2004,Total,Total,927844
 UT,2008,Total,Total,952370
 UT,2012,Total,Total,1017440
 UT,2016,Total,Total,1131430
 UT,2020,Total,Total,1488289
-UT,2024,Total,Total,1471663
+UT,2024,Total,Total,1487951
 VA,2004,Total,Total,3198367
 VA,2008,Total,Total,3723260
 VA,2012,Total,Total,3854489
@@ -1216,13 +1216,13 @@ VT,2008,Total,Total,325046
 VT,2012,Total,Total,299290
 VT,2016,Total,Total,315067
 VT,2020,Total,Total,367428
-VT,2024,Total,Total,362919
+VT,2024,Total,Total,366389
 WA,2004,Total,Total,2859084
 WA,2008,Total,Total,3036878
 WA,2012,Total,Total,3125516
 WA,2016,Total,Total,3317019
 WA,2020,Total,Total,4087631
-WA,2024,Total,Total,3845690
+WA,2024,Total,Total,3898835
 WI,2004,Total,Total,2997007
 WI,2008,Total,Total,2983417
 WI,2012,Total,Total,3068434
@@ -1246,4 +1246,4 @@ Total,2008,Total,Total,131313820
 Total,2012,Total,Total,129085410
 Total,2016,Total,Total,136669276
 Total,2020,Total,Total,158429631
-Total,2024,Total,Total,153482344
+Total,2024,Total,Total,154012713

@@ -2,48 +2,48 @@ State,Year,Party,Candidate,Votes
 AK,2024,Republican,Trump,184204
 AK,2024,Democrat,Harris,139812
 AK,2024,Third Party,All Others,13717
-AL,2024,Republican,Trump,1457704
-AL,2024,Democrat,Harris,769391
-AL,2024,Third Party,All Others,21242
-AR,2024,Republican,Trump,758057
-AR,2024,Democrat,Harris,395855
-AR,2024,Third Party,All Others,26467
+AL,2024,Republican,Trump,1462616
+AL,2024,Democrat,Harris,772412
+AL,2024,Third Party,All Others,21324
+AR,2024,Republican,Trump,759241
+AR,2024,Democrat,Harris,396905
+AR,2024,Third Party,All Others,26530
 AZ,2024,Republican,Trump,1770242
 AZ,2024,Democrat,Harris,1582860
 AZ,2024,Third Party,All Others,36217
-CA,2024,Republican,Trump,5938601
-CA,2024,Democrat,Harris,9123913
-CA,2024,Third Party,All Others,494205
-CO,2024,Republican,Trump,1377078
-CO,2024,Democrat,Harris,1727603
-CO,2024,Third Party,All Others,85242
+CA,2024,Republican,Trump,6050902
+CA,2024,Democrat,Harris,9249261
+CA,2024,Third Party,All Others,502753
+CO,2024,Republican,Trump,1377441
+CO,2024,Democrat,Harris,1728159
+CO,2024,Third Party,All Others,85243
 CT,2024,Republican,Trump,739317
 CT,2024,Democrat,Harris,994287
 CT,2024,Third Party,All Others,29515
-DC,2024,Republican,Trump,20888
-DC,2024,Democrat,Harris,289453
-DC,2024,Third Party,All Others,2755
-DE,2024,Republican,Trump,214184
-DE,2024,Democrat,Harris,289585
-DE,2024,Third Party,All Others,7584
-FL,2024,Republican,Trump,6109549
-FL,2024,Democrat,Harris,4680890
-FL,2024,Third Party,All Others,100305
+DC,2024,Republican,Trump,21076
+DC,2024,Democrat,Harris,294185
+DC,2024,Third Party,All Others,2778
+DE,2024,Republican,Trump,214351
+DE,2024,Democrat,Harris,289758
+DE,2024,Third Party,All Others,7588
+FL,2024,Republican,Trump,6110125
+FL,2024,Democrat,Harris,4683038
+FL,2024,Third Party,All Others,100384
 GA,2024,Republican,Trump,2663117
 GA,2024,Democrat,Harris,2548017
 GA,2024,Third Party,All Others,38913
-HI,2024,Republican,Trump,193169
-HI,2024,Democrat,Harris,312384
-HI,2024,Third Party,All Others,9955
+HI,2024,Republican,Trump,193661
+HI,2024,Democrat,Harris,313044
+HI,2024,Third Party,All Others,9996
 IA,2024,Republican,Trump,927531
 IA,2024,Democrat,Harris,707290
 IA,2024,Third Party,All Others,22631
-ID,2024,Republican,Trump,605144
-ID,2024,Democrat,Harris,274973
-ID,2024,Third Party,All Others,24593
-IL,2024,Republican,Trump,2444517
-IL,2024,Democrat,Harris,3056201
-IL,2024,Third Party,All Others,80143
+ID,2024,Republican,Trump,605246
+ID,2024,Democrat,Harris,274972
+ID,2024,Third Party,All Others,24594
+IL,2024,Republican,Trump,2444631
+IL,2024,Democrat,Harris,3056367
+IL,2024,Third Party,All Others,80152
 IN,2024,Republican,Trump,1715058
 IN,2024,Democrat,Harris,1160146
 IN,2024,Third Party,All Others,49586
@@ -53,27 +53,27 @@ KS,2024,Third Party,All Others,23243
 KY,2024,Republican,Trump,1336230
 KY,2024,Democrat,Harris,700921
 KY,2024,Third Party,All Others,31714
-LA,2024,Republican,Trump,1208269
-LA,2024,Democrat,Harris,766424
-LA,2024,Third Party,All Others,31588
+LA,2024,Republican,Trump,1208505
+LA,2024,Democrat,Harris,766870
+LA,2024,Third Party,All Others,31600
 MA,2024,Republican,Trump,1234961
 MA,2024,Democrat,Harris,2072571
 MA,2024,Third Party,All Others,74037
-MD,2024,Republican,Trump,1026135
-MD,2024,Democrat,Harris,1857794
-MD,2024,Third Party,All Others,75637
-ME,2024,Republican,Trump,374972
-ME,2024,Democrat,Harris,430795
-ME,2024,Third Party,All Others,20890
-MI,2024,Republican,Trump,2804647
-MI,2024,Democrat,Harris,2724029
-MI,2024,Third Party,All Others,110025
-MN,2024,Republican,Trump,1656968
-MN,2024,Democrat,Harris,1519017
-MN,2024,Third Party,All Others,64902
-MO,2024,Republican,Trump,1750987
-MO,2024,Democrat,Harris,1199856
-MO,2024,Third Party,All Others,40999
+MD,2024,Republican,Trump,1033899
+MD,2024,Democrat,Harris,1894275
+MD,2024,Third Party,All Others,77191
+ME,2024,Republican,Trump,376633
+ME,2024,Democrat,Harris,436512
+ME,2024,Third Party,All Others,20956
+MI,2024,Republican,Trump,2816636
+MI,2024,Democrat,Harris,2736533
+MI,2024,Third Party,All Others,109335
+MN,2024,Republican,Trump,1656979
+MN,2024,Democrat,Harris,1519032
+MN,2024,Third Party,All Others,64905
+MO,2024,Republican,Trump,1751027
+MO,2024,Democrat,Harris,1199861
+MO,2024,Third Party,All Others,41000
 MS,2024,Republican,Trump,708302
 MS,2024,Democrat,Harris,429231
 MS,2024,Third Party,All Others,12943
@@ -86,63 +86,63 @@ NC,2024,Third Party,All Others,65850
 ND,2024,Republican,Trump,246505
 ND,2024,Democrat,Harris,112327
 ND,2024,Third Party,All Others,6227
-NE,2024,Republican,Trump,564340
-NE,2024,Democrat,Harris,369687
-NE,2024,Third Party,All Others,12334
+NE,2024,Republican,Trump,564753
+NE,2024,Democrat,Harris,369966
+NE,2024,Third Party,All Others,12344
 NH,2024,Republican,Trump,395578
 NH,2024,Democrat,Harris,418496
 NH,2024,Third Party,All Others,8079
 NJ,2024,Republican,Trump,1966571
 NJ,2024,Democrat,Harris,2218076
 NJ,2024,Third Party,All Others,83694
-NM,2024,Republican,Trump,423327
-NM,2024,Democrat,Harris,478727
-NM,2024,Third Party,All Others,21234
+NM,2024,Republican,Trump,423391
+NM,2024,Democrat,Harris,478802
+NM,2024,Third Party,All Others,21210
 NV,2024,Republican,Trump,751205
 NV,2024,Democrat,Harris,705197
 NV,2024,Third Party,All Others,28438
-NY,2024,Republican,Trump,3484068
-NY,2024,Democrat,Harris,4413528
+NY,2024,Republican,Trump,3484124
+NY,2024,Democrat,Harris,4413634
 NY,2024,Third Party,All Others,0
 OH,2024,Republican,Trump,3121077
 OH,2024,Democrat,Harris,2481269
-OH,2024,Third Party,All Others,40127
+OH,2024,Third Party,All Others,50118
 OK,2024,Republican,Trump,1036213
 OK,2024,Democrat,Harris,499599
 OK,2024,Third Party,All Others,30361
-OR,2024,Republican,Trump,909706
-OR,2024,Democrat,Harris,1227168
-OR,2024,Third Party,All Others,52096
+OR,2024,Republican,Trump,910702
+OR,2024,Democrat,Harris,1228410
+OR,2024,Third Party,All Others,68480
 PA,2024,Republican,Trump,3542701
 PA,2024,Democrat,Harris,3421247
 PA,2024,Third Party,All Others,67822
-RI,2024,Republican,Trump,213021
-RI,2024,Democrat,Harris,282110
-RI,2024,Third Party,All Others,7850
+RI,2024,Republican,Trump,214406
+RI,2024,Democrat,Harris,285156
+RI,2024,Third Party,All Others,11097
 SC,2024,Republican,Trump,1483747
 SC,2024,Democrat,Harris,1028452
-SC,2024,Third Party,All Others,20786
+SC,2024,Third Party,All Others,35941
 SD,2024,Republican,Trump,272081
 SD,2024,Democrat,Harris,146859
 SD,2024,Third Party,All Others,9982
-TN,2024,Republican,Trump,1964593
-TN,2024,Democrat,Harris,1055170
-TN,2024,Third Party,All Others,30465
-TX,2024,Republican,Trump,6375376
-TX,2024,Democrat,Harris,4806474
-TX,2024,Third Party,All Others,150564
-UT,2024,Republican,Trump,883799
-UT,2024,Democrat,Harris,562560
-UT,2024,Third Party,All Others,25304
+TN,2024,Republican,Trump,1965848
+TN,2024,Democrat,Harris,1056010
+TN,2024,Third Party,All Others,40802
+TX,2024,Republican,Trump,6393597
+TX,2024,Democrat,Harris,4835250
+TX,2024,Third Party,All Others,151258
+UT,2024,Republican,Trump,883818
+UT,2024,Democrat,Harris,562566
+UT,2024,Third Party,All Others,41567
 VA,2024,Republican,Trump,2011637
 VA,2024,Democrat,Harris,2235958
 VA,2024,Third Party,All Others,67772
 VT,2024,Republican,Trump,119395
 VT,2024,Democrat,Harris,235791
-VT,2024,Third Party,All Others,7733
-WA,2024,Republican,Trump,1522988
-WA,2024,Democrat,Harris,2238564
-WA,2024,Third Party,All Others,84138
+VT,2024,Third Party,All Others,11203
+WA,2024,Republican,Trump,1530923
+WA,2024,Democrat,Harris,2245849
+WA,2024,Third Party,All Others,122063
 WI,2024,Republican,Trump,1697298
 WI,2024,Democrat,Harris,1667881
 WI,2024,Third Party,All Others,49294
