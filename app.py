@@ -68,7 +68,7 @@ def update_us_vote_graph(
         (df_states["Party"].isin(parties_selected))
     ])
 
-    if toggle_states & 0:
+    if toggle_states & 1:
         updated_df = (
             updated_df
             .groupby(by=["Candidate","Party","Year"], as_index=False)
@@ -124,20 +124,20 @@ def update_us_vote_graph(
     if barnorm_setting == "percent":
         y_range_max = 100
         if toggle_states & 1:
-            subtitle_setting = f"Relative % of votes by Year and State"
-        else:
             subtitle_setting = f"Relative % of votes by Year"
+        else:
+            subtitle_setting = f"Relative % of votes by Year and State"
 
     else:
         if toggle_states & 1:
-            y_range_max = get_y_range_max(updated_df, is_total_us=False)
-            subtitle_setting = f"Votes by Year and State"
-        else:
             y_range_max = get_y_range_max(updated_df, is_total_us=True)
             subtitle_setting = f"Votes by Year"
+        else:
+            y_range_max = get_y_range_max(updated_df, is_total_us=False)
+            subtitle_setting = f"Votes by Year and State"
 
     if toggle_states & 1:
-
+        
         if toggle_votes & 1:
             make_hovertemplate = "<b>Votes: %{y:,.0f}</b>"
         else:
@@ -151,51 +151,7 @@ def update_us_vote_graph(
                 color="Party",
                 color_discrete_map=colors,
                 barnorm=barnorm_setting,
-                facet_col="State",
-                facet_col_wrap=facet_wrap_size,
-                height=600,
-            )
-            .update_traces(
-                hovertemplate=make_hovertemplate
-            )
-            .update_layout(
-                title=dict(text="US Presidential Election, Popular Vote"),
-                title_subtitle=dict(text=subtitle_setting),
-                margin=dict(t=100),
-                hovermode="x",
-            )
-            .update_xaxes(title=dict(font=dict(size=8)))
-            .update_yaxes(range=[0, y_range_max])
-            .for_each_annotation(
-                lambda x: x.update(
-                    text=x.text.split("=")[-1]
-                )  # removes the "state=" from xaxis title
-            )
-            .for_each_xaxis(
-                lambda x: x.update(
-                    title=["" for i in itertools.repeat("", facet_wrap_size)][0]
-                )
-            )
-            .for_each_yaxis(lambda x: x.update(title=""))
-        )
-
-        return fig
-    else:
-
-        if toggle_votes & 1:
-            make_hovertemplate = "<b>Votes: %{y:,.0f}</b>"
-        else:
-            make_hovertemplate = "<b>Vote Share: %{y:,.1f}%</b>"
-
-        fig = (
-            px.histogram(
-                data_frame=updated_df,
-                x="Year",
-                y="Votes",
-                color="Party",
-                color_discrete_map=colors,
-                barnorm=barnorm_setting,
-                height=600,
+                height=400
             )
             .update_traces(
                 customdata = np.stack((updated_df['Candidate']), axis=-1),
@@ -223,7 +179,68 @@ def update_us_vote_graph(
         )
 
         return fig
+        
+    else:
 
+        if toggle_votes & 1:
+            make_hovertemplate = "<b>Votes: %{y:,.0f}</b>"
+        else:
+            make_hovertemplate = "<b>Vote Share: %{y:,.1f}%</b>"
+
+        fig = (
+            px.histogram(
+                data_frame=updated_df,
+                x="Year",
+                y="Votes",
+                color="Party",
+                color_discrete_map=colors,
+                barnorm=barnorm_setting,
+                facet_col="State",
+                facet_col_wrap=facet_wrap_size,
+                height=1200,
+                facet_row_spacing=0.02
+            )
+            .update_traces(
+                hovertemplate=make_hovertemplate
+            )
+            .update_layout(
+                title=dict(text="US Presidential Election, Popular Vote"),
+                title_subtitle=dict(text=subtitle_setting),
+                margin=dict(t=100),
+                hovermode="x",
+            )
+            .update_xaxes(title=dict(font=dict(size=8)))
+            .update_yaxes(
+                range=[0, y_range_max],
+                tickvals=[0,y_range_max/2, y_range_max]
+            )
+            .for_each_annotation(
+                lambda x: x.update(
+                    text=x.text.split("=")[-1]
+                )  # removes the "state=" from xaxis title
+            )
+            .for_each_xaxis(
+                lambda x: x.update(
+                    title=["" for i in itertools.repeat("", facet_wrap_size)][0]
+                )
+            )
+            .for_each_yaxis(lambda x: x.update(title=""))
+        )
+
+        return fig
+
+    
+# updates the toggle states button with current state name
+@callback(
+    Output(component_id="toggle_states_or_all", component_property="children"),
+    Input(component_id="toggle_states_or_all", component_property="n_clicks"),
+)
+def update_toggle(toggle_states):
+    if toggle_states & 1:
+        return "By USA"
+    else:
+        return "By State"
+    
 
 # updates the toggle votes button with the current state name
 @callback(
@@ -234,18 +251,7 @@ def update_toggle(toggle_vote_clicks):
     if toggle_vote_clicks & 1:
         return "By Votes"
     else:
-        return "By Percent"
-    
-# updates the toggle states button with current state name
-@callback(
-    Output(component_id="toggle_states_or_all", component_property="children"),
-    Input(component_id="toggle_states_or_all", component_property="n_clicks"),
-)
-def update_toggle(toggle_states):
-    if toggle_states & 1:
-        return "By States"
-    else:
-        return "By Total US"
+        return "By Pct."
     
 
 # updates the states dropdown with all 50 states except DC
@@ -343,19 +349,20 @@ app.layout = [
         [
             html.H4("Toggle Options"),
             html.Button(
-                children="Toggle Votes",
-                id="toggle_votes_or_pct",
-                n_clicks=0,
-                className="btn btn-primary",
-                style={"width": "40%", "margin-right": "0.25rem"},
-            ),
-            html.Button(
                 children="Toggle States",
                 id="toggle_states_or_all",
                 n_clicks=0,
                 className="btn btn-danger",
-                style={"width": "40%", "margin-left": "0.25rem"},
+                style={"width": "20%", "margin-right": "0.25rem"},
             ),
+            html.Button(
+                children="Toggle Votes",
+                id="toggle_votes_or_pct",
+                n_clicks=0,
+                className="btn btn-primary",
+                style={"width": "20%", "margin-left": "0.25rem"},
+            ),
+
         ],
         className="selector-box",
     ),
@@ -458,7 +465,7 @@ app.layout = [
     html.Div(
         [
             html.H4("Max Columns"),
-            daq.NumericInput(id="facet_wrap_column_selector", value=10, min=1, max=20),
+            daq.NumericInput(id="facet_wrap_column_selector", value=5, min=1, max=20),
         ],
         className="selector-box",
     ),
